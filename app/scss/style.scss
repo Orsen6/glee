@@ -5,3 +5,80 @@
 @import 'media';
 
 
+.header_inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.logo{
+    padding-left: 60px;
+    position: relative;
+    @extend %DMSans-500;
+    font-size: 36px;
+    line-height: 58px;
+    letter-spacing: 3px;
+    text-decoration: none;
+    color: #436372;
+}
+
+.logo::before{
+    content: url('');
+    background-image: url("../images/logo.png");
+    width: 50px;
+    height: 38px;
+    position: absolute;
+    left: 0;
+}
+
+.nav{
+    display: block;
+    &_list{
+        display: flex;
+    }
+    &_list-item + .nav_list-item{
+        margin-left: 35px;
+    }
+    &_list-link{
+        text-decoration: none;
+        font-size: 15px;
+        line-height: 12px;
+        @extend %Rubik-500;
+        color: #436372;
+        font-weight: bold;
+    }
+}
+
+.user_nav{
+    display: flex;
+
+    &-img{
+        padding: 20px;
+    }
+    &-img--search{
+        background-color: #edf1f4;
+        border-radius: 50%;
+        margin-right: 30px;
+    }
+    &-img--liked{
+        background-color: #fcd7b6;
+        padding: 25px 45px;
+        border-top-left-radius: 40%;
+        border-bottom-left-radius: 40%;
+        border-right: 1px solid #fff
+    }
+    &-img--cart{
+        background-color: #fcd7b6;
+        padding: 25px 45px;
+        border-top-right-radius: 40%;
+        border-bottom-right-radius: 40%;
+        border-left: 1px solid #fff
+    }
+    &-img--menu{
+        background-color: #a3bbc8;
+        border-radius: 50%;
+        margin-left: 30px;
+    }
+}
+
