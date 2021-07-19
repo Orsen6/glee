@@ -1,5 +1,7 @@
-html{
+html,
+body{
     box-sizing: border-box;
+    height: 100%;
   }
   
   *,
@@ -34,6 +36,8 @@ html{
 
   body{
       overflow-x: hidden;
+      display: flex;
+      flex-direction: column;
   }
   
   ul[class] {
@@ -50,4 +54,9 @@ html{
   textarea,
   select {
     font: inherit;
+  }
+
+  a{
+    text-decoration: none;
+    color: inherit;
   }
