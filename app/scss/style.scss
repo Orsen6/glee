@@ -284,5 +284,111 @@ li.slick-active button{
     opacity: 1;
 }
 
+.products-top{
+    display: flex;
+    justify-content: center;
+    &_item{
+        padding: 50px 150px 50px 220px;
+        background-color: #fef7f0;
+        position: relative;
+        z-index: 1;
+    }
+    &_item:before{
+        content: '';
+        position: absolute;
+        background-image: url("../images/products-img1.png");
+        width: 50px;
+        height: 50px;
+        z-index: 100;
+        left: 160px;
+    }
+    &_item--before:before{
+        content: '';
+        position: absolute;
+        background-image: url("../images/products-img2.png");
+        width: 60px;
+        background-repeat: no-repeat;
+        height: 40px;
+        z-index: 100;
+        left: 150px;
+    }
+    &_item--before2:before{
+        content: '';
+        position: absolute;
+        background-image: url("../images/products-img3.png");
+        width: 60px;
+        background-repeat: no-repeat;
+        height: 60px;
+        z-index: 100;
+        left: 150px;
+    }
+    &_item-title{
+        margin-bottom: 15px;
+        font-size: 18px;
+        line-height: 40px;
+        @extend %DMSans-700;
+    }
+    &_item-text{
+        font-size: 16px;
+        line-height: 30px;
+        @extend %DMSans-500;
+    }
+}
+
+.filter{
+    margin-top: 75px;
+   
+    &-item{
+        text-align: center;
+    }
+    &-title{
+        font-size: 36px;
+        @extend %DMSans-700;
+    }
+    &-items{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 40px;
+        margin-top: 80px;
+    }
+    &-item_pic{
+        margin-bottom: 70px; 
+        margin: 0 auto 70px; 
+    }
+    &-item_desc{
+        font-size: 16px;
+        line-height: 40px;
+        @extend %DMSans-700;
+        color: #243f4d;
+        margin-bottom: 0;
+    }
+    &-item_cin{
+        font-size: 16px;
+        line-height: 40px;
+        @extend %DMSans-700;
+        color: #a3bbc8;
+        margin-bottom: 0;
+    }
+}
+.filter-buttons{
+    width: 100%;
+    margin-top: 50px;
+    &_wrap{
+        width: 320px;
+        margin: 0 auto;
+    }
+    &_ul{
+        display: flex;
+    }
+    &_ul-li{
+        font-size: 16px;
+        @extend %DMSans-700;
+    }
+    &_ul-btn{
+        background-color: inherit;
+        color: #8b8b8b;
+        border: none;
+    }
+}
 
 

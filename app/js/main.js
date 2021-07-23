@@ -6,4 +6,6 @@ $(function(){
         dots: true
     });
 
+    var mixer = mixitup('.filter-items');
+
 });
