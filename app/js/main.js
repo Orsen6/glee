@@ -8,4 +8,6 @@ $(function(){
 
     var mixer = mixitup('.filter-items');
 
+    var mixer = mixitup('.secondFilter-items');
+
 });

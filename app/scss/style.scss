@@ -474,5 +474,55 @@ li.slick-active button{
         }
     }
 }
+.secondFilter-items{
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 35px 30px;
+}
+.secondFilter-item{
+    background-color: #f8f8f8;
+    width: 370px;
+    height: 245px;
+    overflow-x: hidden;
+    &-title{
+        font-size: 20px;
+        @extend %DMSans-700;
+        padding: 42px 0 25px 35px;
+    }
+    &-span{
+        font-size: 16px;
+        @extend %DMSans-700;
+        color: #a3bbc8;
+        padding-left: 35px;
+    }
+    &_wrap{
+        display: flex;
+    }
+    &_pic{
+        margin-left: 10px;
+        &--margin{
+            margin-top: -50px;
+            margin-left: 120px;
+        }
+        &--margin2{
+            margin-top: -30px;
+        }
+    }
+}
+
+.video{
+    background-image: url('../images/video_bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    width: 100%;
+    margin-top: 120px;
+    &-link{
+        margin: 0 auto;
+        padding-top: 187px;
+    }
+}
 
 
