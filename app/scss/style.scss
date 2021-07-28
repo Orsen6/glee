@@ -525,4 +525,114 @@ li.slick-active button{
     }
 }
 
+.blog{
+    margin-top: 120px;
+    position: relative;
+    margin-bottom: 250px;
+    &-top{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 45px;
+    }
+    &-top_title{
+        font-size: 36px;
+        @extend %DMSans-700;
+    }
+    &-top_subtitle{
+        font-size: 16px;
+        @extend %DMSans-700;
+        padding-right: 30px;
+        position: relative;
+        &::after{
+            content: "";
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-repeat: no-repeat;
+            background-image: url('../images/blog/blog-arrow.png');
+            right: 5px;
+            top: 3px;
+        }
+    }
+}
+
+.blog-main{
+    display: flex;
+    justify-content: space-between;
+    &_item{
+        background-color: #ffffff;
+        border: 1px solid #b3b7b5;
+        &:hover{
+            border: none;
+        }
+    }
+    &_item-link{
+        position: relative;
+        background-color: #fff;
+        &::after{
+            content: '';
+            background-repeat: no-repeat;
+            position: absolute;
+            width: 103px;
+            height: 30px;
+            background-image: url('../images/blog/after.png');
+            z-index: 30;
+            top: 235px;    
+            left: 30px;
+        }
+    }
+    &_item-text{
+        padding: 25px 45px 15px 15px;
+        font-size: 17px;
+        width: 330px;
+        @extend %DMSans-500;
+        margin: 0 auto;
+        border-bottom: 1px solid #e0e0e0;
+        margin-bottom: 20px;
+        line-height: 15px;
+    }
+    &_item-wrap{
+      display: flex;
+    }
+    &_item-sub{
+        font-size: 12px;
+        line-height: 30px;
+        @extend %Rubik-400;
+        text-transform: uppercase;
+        position: relative;
+        &::before{
+            content: "";
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            background-repeat: no-repeat;
+            background-image: url('../images/liked.png');
+            left: 15px;
+            top: 7px;
+        }
+    }
+}
+.blog-main_item-sub:first-child{
+    padding-left: 45px;
+}
+
+.social{
+    background-color: #fef7f0;
+    position: absolute;
+    width: 100%;
+    top: 270px;
+    z-index: -1;
+    &-wrap{
+    display: flex;
+    justify-content: space-between;
+    height: 435px;
+    align-items: center;
+    padding-top: 200px;
+    }
+    &-logo{
+        
+    }
+}
+
+
 
