@@ -18,6 +18,13 @@
     font-weight: 400;
 }
 
+%checkbox{
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+}
+
 @function max($numbers...) {
     @return m#{a}x(#{$numbers});
 }

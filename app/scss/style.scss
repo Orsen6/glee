@@ -651,9 +651,9 @@ li.slick-active button{
 }
 
 .blog{
-    margin-top: 120px;
+    // margin-top: 120px;
     position: relative;
-    margin-bottom: 250px;
+    // margin-bottom: 250px;
     &-top{
         display: flex;
         justify-content: space-between;
@@ -745,7 +745,7 @@ li.slick-active button{
     background-color: #fef7f0;
     position: absolute;
     width: 100%;
-    top: 270px;
+    // top: 270px;
     z-index: -1;
     &-wrap{
     display: flex;
@@ -767,6 +767,169 @@ li.slick-active button{
     padding-top: 0;
 }
 
+// SHOP
+
+.shop{
+    padding-top: 120px;
+    background-color: #fafafa;
+    &-wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.shop-filters{
+    &_box{
+        padding: 15px;
+        width: 270px;
+        background-color: #fff;
+        margin-bottom: 5px;
+    }
+    
+    &_title{
+        font-size: 18px;
+        @extend %DMSans-700;
+        color: #243f4d;
+        position: relative;
+        margin-bottom: 20px;
+        padding: 15px;  
+        &.shop-filters_price-title{
+            margin-bottom: 0;
+        }
+        &::after{
+            content: '';
+            position: absolute;
+            height: 3px;
+            width: 55px;
+            background-image: url('../images/shop/title-after.png');
+            background-repeat: no-repeat;
+            right: 55px;
+            top: 22px;
+        }
+    }
+    &_form-text{
+        padding: 15px;
+        font-size: 16px;
+        @extend %Rubik-400;
+        color: #243f4d;
+    }
+    &_form-label{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        
+    }
+    &_form-input{
+        @extend %checkbox;
+        position: absolute;
+        &:checked + .shop-filters_form-box{
+            background-color: #edf1f4;
+            border-radius: 10px;
+        }
+    }
+    &_form-box{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    &_form-checkbox{
+        padding-right: 15px;
+    }
+    &_price-label{
+        display: flex;
+        justify-content: space-between;
+    }
+    &_price-num{
+        position: relative;
+        padding-left: 20px;
+        font-size: 14px;
+        @extend %Rubik-400;
+        color: #243f4d;
+        &::before{
+            content: '$';
+            position: absolute;
+            left: 10px;
+        }
+    }
+    &_brand-label{
+        cursor: pointer;
+
+    }
+    &_brand-input{
+        @extend %checkbox;
+        position: absolute;
+        &:checked + .shop-filters_brand-wrapper{
+            background-color: #edf1f4;
+            border-radius: 10px;
+        }
+    }
+    &_brand-wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+    &_recent-wrapper{
+        display: flex;
+        justify-content: left;
+        margin-bottom: 25px;
+    }
+    &_recent-img{
+        border: 3px solid #f7f7f7;
+        // height: 70px;
+        // width: 70px;
+        &--padding{
+            padding: 0 10px;
+        }
+    }
+    &_recent-left{
+        margin: 0 20px;
+    }
+    &_recent-title{
+        margin-bottom: 10px;
+        font-size: 14px;
+        @extend %Rubik-400;
+        color: #333333;
+    }
+    &_recent-cost{
+        margin-top: 10px;
+        display: block;
+        font-size: 15px;
+        @extend %Rubik-400;
+        color: #333333;
+    }
+}
+
+.jq-ry-group-wrapper{
+    margin-left: -6px;
+}
+
+.irs--flat .irs-min, .irs--flat .irs-max{
+    display: none;
+}
+.irs--flat .irs-line{
+    height: 3px;
+    background-color: #c2d2db;
+}
+.irs--flat .irs-bar{
+    height: 3px;
+    background-color: #a3bbc8;
+}
+.irs--flat .irs-handle > i:first-child{
+    height: 15px;
+    width: 15px;
+    background-color: #a3bbc8;
+}
+.irs--flat .irs-handle.state_hover>i:first-child, .irs--flat .irs-handle:hover>i:first-child{
+    background-color: #a3bbc8;
+}
+.irs-handle.from,
+.irs-handle.to{
+    top: 20px;
+}
+.irs--flat .irs-from, .irs--flat .irs-to, .irs--flat .irs-single{
+    display: none;
+}
 
 
 

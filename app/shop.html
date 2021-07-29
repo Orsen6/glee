@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link type="text/css" rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header_inner">
+                <a href="" class="logo">Glee.</a>
+                <nav class="nav">
+                    <ul class="nav_list">
+                        <li class="nav_list-item">
+                            <a href="#" class="nav_list-link">Home +</a>
+                        </li>
+                        <li class="nav_list-item">
+                            <a href="#" class="nav_list-link">About</a>
+                        </li>
+                        <li class="nav_list-item">
+                            <a href="#" class="nav_list-link">Services</a>
+                        </li>
+                        <li class="nav_list-item">
+                            <a href="#" class="nav_list-link">Pages +</a>
+                        </li>
+                        <li class="nav_list-item">
+                            <a href="#" class="nav_list-link">News</a>
+                        </li>
+                        <li class="nav_list-item">
+                            <a href="#" class="nav_list-link">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="user_nav">
+                    <a  href="#"><img alt="" class="user_nav-img user_nav-img--search" src="images/search.png"></a>
+                    <a class="user_nav-link" href="#"><img alt="" class="user_nav-img user_nav-img--liked" src="images/liked.png">
+                    <span class="user_nav-span">0</span></a>
+                    <a class="user_nav-link" href=""><img alt="" class="user_nav-img user_nav-img--cart" src="images/cart.png">
+                    <span class="user_nav-span">0</span></a>
+                    <a href=""><img alt="" class="user_nav-img user_nav-img--menu" src="images/menu.png"></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="breadcrumbs">
+            <div class="breadcrumbs-wrap">
+                <h2 class="breadcrumbs-title filter-title">
+                    Shop
+                </h2>
+                <div class="list-wrap">
+                    <ul class="breadcrumbs-items">
+                        <a href="#">
+                            <li class="breadcrumbs-item">
+                                Home
+                            </li>
+                        </a>
+                            <li class="breadcrumbs-item">
+                                Shop
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <section class="shop">
+            <div class="container-min">
+                <div class="shop-wrapper">
+                    <div class="shop-filters">
+                        <div class="shop-filters_category shop-filters_box">
+                            <h3 class="shop-filters_title">
+                                CATEGORY
+                            </h3>
+                            <form class="shop-filters_form" action="#">
+                                <label class="shop-filters_form-label">
+                                    <input class="shop-filters_form-input" type="checkbox">
+                                    <div class="shop-filters_form-box">
+                                        <span class="shop-filters_form-text">Chair</span>
+                                        <span class="shop-filters_form-checkbox">
+                                             <img src="images/shop/categories.png" alt="" class="shop-filters_form-pic">
+                                        </span>
+                                    </div>
+                                </label>
+                                <label class="shop-filters_form-label">
+                                    <input class="shop-filters_form-input" type="checkbox">
+                                    <div class="shop-filters_form-box">
+                                        <span class="shop-filters_form-text">Table</span>
+                                        <span class="shop-filters_form-checkbox">
+                                             <img src="images/shop/categories.png" alt="" class="shop-filters_form-pic">
+                                        </span>
+                                    </div>
+                                </label>
+                                <label class="shop-filters_form-label">
+                                    <input class="shop-filters_form-input" type="checkbox">
+                                    <div class="shop-filters_form-box">
+                                        <span class="shop-filters_form-text">Lamp</span>
+                                        <span class="shop-filters_form-checkbox">
+                                             <img src="images/shop/categories.png" alt="" class="shop-filters_form-pic">
+                                        </span>
+                                    </div>
+                                </label>
+                                <label class="shop-filters_form-label">
+                                    <input class="shop-filters_form-input" type="checkbox">
+                                    <div class="shop-filters_form-box">
+                                        <span class="shop-filters_form-text">Watch</span>
+                                        <span class="shop-filters_form-checkbox">
+                                             <img src="images/shop/categories.png" alt="" class="shop-filters_form-pic">
+                                        </span>
+                                    </div>
+                                </label>
+                                <label class="shop-filters_form-label">
+                                    <input class="shop-filters_form-input" type="checkbox">
+                                    <div class="shop-filters_form-box">
+                                        <span class="shop-filters_form-text">Clock</span>
+                                        <span class="shop-filters_form-checkbox">
+                                             <img src="images/shop/categories.png" alt="" class="shop-filters_form-pic">
+                                        </span>
+                                    </div>
+                                </label>
+                            </form>
+                        </div>
+
+                        <div class="shop-filters_price shop-filters_box">
+                            <h3 class="shop-filters_title shop-filters_price-title">
+                               PRICE
+                            </h3>
+                            <form class="shop-filters_price-form">
+                                <input class="shop-filters_price-input" type="text"  name="my_range" value="" data-min = "0",
+                                data-max= "1000",
+                                data-from= "100",
+                                data-to= "500"/>
+                                <label class="shop-filters_price-label">
+                                    <span class="shop-filters_price-num--start shop-filters_price-num"></span>
+                                    <span class="shop-filters_price-num--finish shop-filters_price-num"></span>
+                                </label>
+                            </form>
+                        </div>
+
+                        <div class="shop-filters_brand shop-filters_box">
+                            <h3 class="shop-filters_title shop-filters_brand-title">
+                                BRAND
+                             </h3>
+                             <form action="" class="shop-filters_brand-form">
+                                <label class="shop-filters_brand-label">
+                                    <input class="shop-filters_brand-input" type="checkbox">
+                                     <div class="shop-filters_brand-wrapper">
+                                         <span class="shop-filters_brand-text shop-filters_form-text">RFL</span>
+                                         <span class="shop-filters_brand-num shop-filters_form-text">(10)</span>
+                                     </div>
+                                </label>
+                                <label class="shop-filters_brand-label">
+                                    <input class="shop-filters_brand-input" type="checkbox">
+                                     <div class="shop-filters_brand-wrapper">
+                                         <span class="shop-filters_brand-text shop-filters_form-text">Brother</span>
+                                         <span class="shop-filters_brand-num shop-filters_form-text">(21)</span>
+                                     </div>
+                                </label>
+                                <label class="shop-filters_brand-label">
+                                    <input class="shop-filters_brand-input" type="checkbox">
+                                     <div class="shop-filters_brand-wrapper">
+                                         <span class="shop-filters_brand-text shop-filters_form-text">Regal</span>
+                                         <span class="shop-filters_brand-num shop-filters_form-text">(3)</span>
+                                     </div>
+                                </label>
+                                <label class="shop-filters_brand-label">
+                                    <input class="shop-filters_brand-input" type="checkbox">
+                                     <div class="shop-filters_brand-wrapper">
+                                         <span class="shop-filters_brand-text shop-filters_form-text">Nadia</span>
+                                         <span class="shop-filters_brand-num shop-filters_form-text">(14)</span>
+                                     </div>
+                                </label>
+                                <label class="shop-filters_brand-label">
+                                    <input class="shop-filters_brand-input" type="checkbox">
+                                     <div class="shop-filters_brand-wrapper">
+                                         <span class="shop-filters_brand-text shop-filters_form-text">Otobi</span>
+                                         <span class="shop-filters_brand-num shop-filters_form-text">(6)</span>
+                                     </div>
+                                </label>
+                             </form>
+                        </div>
+                        <div class="shop-filters_recent shop-filters_box">
+                            <h3 class="shop-filters_title ">
+                                RECENT PRODUCTS
+                            </h3>
+                                <div class="shop-filters_recent-wrapper">
+                                    <div class="shop-filters_recent-left">
+                                        <a href="">
+                                            <img class="shop-filters_recent-img" src="images/shop/recent-1.png" alt="" >
+                                        </a>
+                                    </div>
+                                    <a href="">
+                                        <div class="shop-filters_recent-right">
+                                            <p class="shop-filters_recent-title">Pendant lamp</p>
+                                            <div id="recent-star" class="shop-filters_recent-star"></div>
+                                            <span class="shop-filters_recent-cost">23$</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="shop-filters_recent-wrapper">
+                                    <div class="shop-filters_recent-left">
+                                        <a href="">
+                                            <img class="shop-filters_recent-img shop-filters_recent-img--padding" src="images/shop/recent-2.png" alt="" >
+                                        </a>
+                                    </div>
+                                    <a href="">
+                                        <div class="shop-filters_recent-right">
+                                            <p class="shop-filters_recent-title">Pendant lamp</p>
+                                            <div id="recent-star2" class="shop-filters_recent-star"></div>
+                                            <span class="shop-filters_recent-cost">23$</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="shop-filters_recent-wrapper">
+                                    <div class="shop-filters_recent-left">
+                                        <a href="">
+                                            <img class="shop-filters_recent-img shop-filters_recent-img--padding" src="images/shop/recent-3.png" alt="" >
+                                        </a>
+                                    </div>
+                                    <a href="">
+                                        <div class="shop-filters_recent-right">
+                                            <p class="shop-filters_recent-title">Pendant lamp</p>
+                                            <div id="recent-star3" class="shop-filters_recent-star"></div>
+                                            <span class="shop-filters_recent-cost">23$</span>
+                                        </div>
+                                    </a>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="shop-content">
+                    
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="blog">
+            <div class="social social--position">
+                <div class="container-min">
+                    <div class="social-wrap social-wrap--height">
+                        <img class="social-logo" src="images/social/1.png" alt="" >
+                        <img class="social-logo" src="images/social/2.png" alt="" >
+                        <img class="social-logo" src="images/social/3.png" alt="" >
+                        <img class="social-logo" src="images/social/4.png" alt="" >
+                        <img class="social-logo" src="images/social/5.png" alt="" >
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+    </main>
+
+    <footer class="footer">
+        <div class="container-min">
+            <div class="footer-top">
+                <div class="footer-top_connection">
+                    <a href="" class="logo">Glee.</a>
+                    <a class="footer-top_connection-link" href="">ADDRESS: 4772 Wines Lane Houston, TX 77032</a>
+                    <a class="footer-top_connection-link" href="">Telephone: +832-347-5843</a>
+                    <a class="footer-top_connection-link" href="">Email: contact@Glee.com</a>
+                </div>
+                <div class="footer-top_social">
+                    <h6 class="footer-top_social-title">SERVICES</h6>
+                    <ul class="footer-top_social-list">
+                        <li class="footer-top_social-item">
+                            <a href="" class="footer-top_social-link">About us</a>
+                        </li>
+                        <li class="footer-top_social-item">
+                            <a href="" class="footer-top_social-link">Return Policy</a>
+                        </li>
+                        <li class="footer-top_social-item">
+                            <a href="" class="footer-top_social-link">Our Blog</a>
+                        </li>
+                        <li class="footer-top_social-item">
+                            <a href="" class="footer-top_social-link">Contact Us</a>
+                        </li>
+                        <li class="footer-top_social-item">
+                            <a href="" class="footer-top_social-link">Terms & Condition</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-top_social">
+                    <h6 class="footer-top_social-title">ACCOUNT</h6>
+                    <ul class="footer-top_social-list">
+                        <li class="footer-top_social-item">
+                            <a href="" class="footer-top_social-link">Your Account</a>
+                        </li>
+                        <li class="footer-top_social-item">
+                            <a href="" class="footer-top_social-link">Checkout</a>
+                        </li>
+                        <li class="footer-top_social-item">
+                            <a href="" class="footer-top_social-link">Login</a>
+                        </li>
+                        <li class="footer-top_social-item">
+                            <a href="" class="footer-top_social-link">Register</a>
+                        </li>
+                </div>
+                <div class="footer-top_sub">
+                    <h6 class="footer-top_sub-title footer-top_social-title">NEWSLETTER</h6>
+                    <p class="footer-top_sub-text">Subscribe by our newsletter and get update protidin.</p>
+                    <div class="footer-top_sub-form">
+                        <form action="" class="sub-form">
+                            <input class="sub-form_input" type="email" placeholder="Email address">
+                            <button type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-bottom_copy">©2020 CopyRight Example. All rights reserved. </p>
+                <div class="footer-bottom_transitions">
+                    <ul class="footer-top_social-list footer-bottom_social-list">
+                        <li class="footer-top_social-item footer-bottom_social-item">
+                            <a href="" class="footer-top_social-link">About us</a>
+                        </li>
+                        <li class="footer-top_social-item footer-bottom_social-item">
+                            <a href="" class="footer-top_social-link">Return Policy</a>
+                        </li>
+                        <li class="footer-top_social-item footer-bottom_social-item">
+                            <a href="" class="footer-top_social-link">Our Blog</a>
+                        </li>
+                        <li class="footer-top_social-item footer-bottom_social-item">
+                            <a href="" class="footer-top_social-link">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="js/main.min.js"></script>
+</body>
+</html>
