@@ -1,5 +1,20 @@
 $(function(){
 
+    $('.shop-content_wrapper-btn').on('click', function () {
+        $('.shop-content_wrapper-btn').removeClass('shop-content_wrapper-btn--active');
+        $(this).addClass('shop-content_wrapper-btn--active');
+    });
+
+    $('.shop-content_wrapper-btn--list').on('click', function (){
+        $('.shop-filter_item').addClass('shop-filter_item--list');
+    });
+
+    $('.shop-content_wrapper-btn--grid').on('click', function (){
+        $('.shop-filter_item').removeClass('shop-filter_item--list');
+    });
+
+
+
     $(".shop-filters_price-input").ionRangeSlider({
         type: "double",
         prefix: "$",
