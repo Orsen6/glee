@@ -31,7 +31,7 @@ $(function(){
 
     $(function () {
  
-        $("#recent-star, #recent-star2, #recent-star3").rateYo({
+        $("#recent-star, #recent-star2, #recent-star3, #product-desc_rating").rateYo({
           starWidth: "12px",
           rating    : 4,
           spacing: "5px",
@@ -40,10 +40,35 @@ $(function(){
        
       });
 
-    $('.slider-inner').slick({
+    
 
+    $('.slider-inner').slick({
         arrows: false,
         dots: true
+    });
+
+    $('.product-slider_small').slick({
+        asNavFor: '.product-slider_big',
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        focusOnSelect: true,
+        vertical: true,
+        draggable: false,
+        autoplay: false
+    });
+
+    $('.product-slider_big').slick({
+        asNavFor: '.product-slider_small',
+        fade: true,
+        arrows: false,
+        draggable: false,
+        slidesToShow: 1,
+        centerMode: true 
+    });
+
+    $('.product-desc_input').styler({
+        filePlaceholder: 1,
+        
     });
 
     var mixer = mixitup('.filter-items');

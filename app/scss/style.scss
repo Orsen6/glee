@@ -247,6 +247,9 @@
 .list-wrap{
     margin: 0 auto;
     width: 120px;
+    &--product{
+        width: 180px;
+    }
 }
 
 .form{
@@ -1051,6 +1054,96 @@ li.slick-active button{
 }
 .irs--flat .irs-from, .irs--flat .irs-to, .irs--flat .irs-single{
     display: none;
+}
+
+.product_wrapper{
+    padding: 120px 0 100px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fefefe;
+}
+
+.product-slider{
+    * {
+        min-height: 0;
+        min-width: 0;
+      }
+    display: flex;
+    width: 555px;
+    height: 540px;
+    margin-right: 65px;
+    &_small{
+        width: 145px;
+        height: 530px;
+        .slick-list{
+            height: 545px !important;
+        }
+    }
+    .slick-slide{
+        margin-top: 0px;
+        width: 240px;
+    }
+    
+    &_small-item{
+        cursor: pointer;
+        width: 140px;
+        height: 160px;
+        border: 3px solid #f2f2f2;
+        margin-top: 25px;
+        &.product-slider_small-item--margin{
+            margin-top: 0;
+        }
+    }
+    &_small-img{
+        max-width: 140px;
+        height: 160px;
+        object-fit: contain;
+        margin: 0 auto;
+        
+    }
+    &_big{
+        width: 385px;
+        height: 530px;
+        display: block;
+        margin-left: 25px;
+    }
+    &_big-item{
+        padding: 69px 80px;
+        border: 3px solid #f2f2f2;
+    }
+    &_big-img{
+        max-width: 230px;
+        height: 400px;
+        
+    }
+}
+.product-desc{
+    width: 540px;
+    text-align: left;
+    &_title{
+        padding: 30px 0 25px;
+        font-size: 40px;
+        @extend %Rubik-400;
+        color: #333333;
+    }
+    &_rating{
+        margin-bottom: 40px;
+    }
+    &_price{
+        font-size: 30px;
+        line-height: 45px;
+        @extend %Rubik-400;
+        color: #333333;
+        margin-bottom: 35px;
+        display: inline-block;
+    }
+    &_text{
+        font-size: 16px;
+        line-height: 30px;
+        @extend %Rubik-400;
+        color: #243f4d;
+        margin-bottom: 35px;
+    }
 }
 
 
