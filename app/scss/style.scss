@@ -832,9 +832,8 @@ li.slick-active button{
 
 .social{
     background-color: #fef7f0;
-    position: absolute;
+    // position: absolute;
     width: 100%;
-    // top: 270px;
     z-index: -1;
     &-wrap{
     display: flex;
@@ -842,6 +841,10 @@ li.slick-active button{
     height: 435px;
     align-items: center;
     padding-top: 200px;
+    &.social-wrap--main{
+        position: inherit;
+        margin-top: -135px;
+    }
     }
     &-logo{
         
@@ -850,11 +853,15 @@ li.slick-active button{
 
 .social--position{
     position: relative;
+    height: 435px;
+    padding-top: 200px;
 }
 .social-wrap--height{
     height: 235px;
     padding-top: 0;
 }
+
+
 
 // SHOP
 
@@ -1255,6 +1262,95 @@ li.slick-active button{
     outline: none;
 }
 
+.additional{
+    width: 100%;
+    text-align: center;
+    &-btns{
+        margin: 0 auto 40px;
+    }
+    &-btn{
+        font-size: 18px;
+        @extend %Rubik-500;
+        color: #243f4d;
+        font-weight: bold;
+        width: 240px;
+        padding: 20px 0;
+        background-color: #edf1f4;
+        display: inline-block;
+        text-align: center;
+        border-radius: 8px;
+        &.additional-btn--active{
+            background-color: #a3bbc8;
+            color: #fff;
+        }
+    }
+}
+
+.additional-content{
+    display: none;
+    &.additional-content--active{
+        display: block;
+    }
+    &_text{
+        font-size: 16px;
+        line-height: 30px;
+        color: #243f4d;
+        @extend %Rubik-400;
+        font-weight: 600;
+        text-align: left;
+    }
+}
+.inner{
+    padding-top: 130px;
+    position: relative;
+    padding-bottom: 120px;
+}
+.inner-content{
+    &_title{
+        font-size: 36px;
+        @extend %DMSans-700;
+        color: #243f4d;
+    }
+    &_slider{
+        margin-top: -150px;
+    }
+}
+
+
+.slick-arrow{
+    position: absolute;
+    right: 0;
+    top: 120px;
+    z-index: 10;
+}
+.slick-prev,
+.slick-next{
+    height: 15px;
+    background-color: inherit;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border: 3px solid #a3bbc8;
+    border-radius: 5px;
+}
+
+.slick-prev{
+    right: 80px;
+}
+.slick-next{
+    right: 15px;
+}
+
+.slider-item_arrow{
+    width: 23px;
+    height: 10px;
+    object-fit: cover;
+    margin-left: 5px;
+}
+
+.slick-disabled{
+    border: 3px solid #edf1f4;
+}
 
 
 
