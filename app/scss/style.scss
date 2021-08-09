@@ -488,6 +488,9 @@ li.slick-active button{
         text-align: center;
         position: relative;
         background-color: #fdfdfd;
+        &_pic{
+            height: 200px;
+        }
         &:hover{
             .filter-item_menu{
                 transform: translateY(0%);
@@ -1806,6 +1809,100 @@ li.slick-active button{
     object-fit: cover;
     background-image: url('../images/blog-one/input-3.png');
     background-repeat: no-repeat;
+}
+
+.contacts{
+    padding-top: 120px;
+    text-align: center;
+    &-sub{
+        display: inline-block;
+        margin-bottom: 15px;
+        font-size: 16px;
+        color: #a3bbc8;
+        @extend %DMSans-700;
+    }
+    &-title{
+        font-size: 35px;
+        color: #436372;
+        @extend %DMSans-700;
+        margin-bottom: 75px;
+    }
+    &_wrapper{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 120px;
+    }
+    &-item{
+        width: 370px;
+        height: 380px;
+        background-color: #fbfbfb;
+        cursor: pointer;
+        &:hover{
+            border: 2px solid #a3bbc8;
+        }
+    }
+    &-item_img{
+        padding: 15px 20px;
+        background-color: #fff;
+        border-radius: 20px;
+        margin: 70px auto 65px;
+        &--color{
+            background-color: #a3bbc8;
+        }
+    }
+    &-item_title{
+        font-size: 20px;
+        color: #222222;
+        @extend %DMSans-700;
+        margin-bottom: 25px;
+    }
+    &-item_text{
+        font-size: 16px;
+        color: #565872;
+        @extend %Rubik-400;
+        line-height: 30px;
+    }
+    &-box{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 140px;
+        .leave-form_input{
+            width: 300px;
+            border: none;
+            background-color: #fafafa;
+            outline: none;
+        }
+        .leave-form_input + .leave-form_label::before{
+            right: 20px;
+        }
+        .leave{
+            width: 620px;
+            text-align: left;
+            padding-top: 0;
+        }
+        .leave-form_textarea{
+            border: none;
+            background-color: #fafafa;
+            outline: none;
+            height: 180px;
+            margin-bottom: 25px;
+        }
+        .leave-form_textarea+.leave-form_label3::before{
+            right: -600px;
+        }
+        .leave-form_btn{
+            font-size: 15px;
+            @extend %DMSans-700;
+            color: #fff;
+            cursor: pointer;
+            border-radius: 8px;
+        }
+        &_map-pic{
+        }
+    }
+    .blog{
+        margin-top: -135px;
+    }
 }
 
 
