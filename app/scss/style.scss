@@ -3,7 +3,6 @@
 @import 'reset';
 @import 'libs';
 @import 'global';
-@import 'media';
 
 
 .header_inner{
@@ -11,6 +10,14 @@
     justify-content: space-between;
     align-items: center;
     margin-top: 60px;
+    &-btn{
+        display: none;
+    }
+    &-span{
+        font-size: 20px;
+        @extend %DMSans-500;
+        color: rgb(67, 99, 114);
+    }
 }
 
 .logo{
@@ -82,15 +89,15 @@
     &-img--liked{
         background-color: #fcd7b6;
         padding: 20px 40px;
-        border-top-left-radius: 40%;
-        border-bottom-left-radius: 40%;
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
         border-right: 1px solid #fff
     }
     &-img--cart{
         background-color: #fcd7b6;
         padding: 20px 40px;
-        border-top-right-radius: 40%;
-        border-bottom-right-radius: 40%;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
         border-left: 1px solid #fff
     }
     &-img--menu{
@@ -101,7 +108,7 @@
 }
 
 .container-min{
-    width: 1170px;
+    max-width: 1170px;
     margin: 0 auto;
 }
 
@@ -121,6 +128,7 @@
         flex-direction: column;
         width: 200px;
         margin-right: 100px;
+        padding-left: 5px;
     }
     
     &_connection-link{
@@ -134,6 +142,7 @@
         margin-top: 15px;
         width: 140px;
         margin-right: 180px;
+        padding-left: 5px;
     }
     &_social-title{
         font-size: 16px;
@@ -1905,4 +1914,4 @@ li.slick-active button{
     }
 }
 
-
+@import 'media';

@@ -1,0 +1,103 @@
+
+
+@media (max-width: 1134px){
+    .header_inner-btn{
+        display: block;
+        background-color: inherit;
+        border: none;
+        border-bottom: 1px solid #a3bbc8;
+        margin-left: auto;
+        margin-right: 40px;
+        order: 1;
+    }
+    .nav_list-item+.nav_list-item {
+        margin-left: 0px;
+    }
+    .nav{
+        order: 0;
+        &_list{
+            flex-direction: column;
+            position: absolute;
+            top: 115px;
+            right: 30px;
+            transform: translateY(-200%);
+            transition: all .3s;
+        }
+        .nav_list.nav_list--active{
+            transform: translateY(0%);
+            transition: all .3s;
+        }
+        &_list-item{
+            margin-top: 20px;
+        }
+        &_list-link{
+            font-size: 20px;
+        }
+    }
+    .user_nav{
+        margin-left: auto;
+    }
+
+    .footer-top{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        &_sub{
+            display: block;
+        }
+    }
+}
+@media (max-width: 700px){
+    .footer-bottom{
+        flex-direction: column;
+        text-align: center;
+        &_transitions{
+            margin: 0 auto;
+        }
+    }
+}
+
+@media (max-width: 665px){
+    .header_inner{
+        padding-left: 5px;
+    }
+    .user_nav{
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        right: 150px;
+        top: 100px;
+        transform: translateY(-200%);
+        transition: all .3s;
+        &.user_nav--active{
+            transform: translateY(0%);
+            transition: all .3s;
+        }
+        &-img{
+            margin-bottom: 10px;
+        }
+        &-img--liked{
+            border-radius: 40px;
+        }
+        &-img--cart{
+            border-radius: 40px;
+        }
+        &-img--search{
+            margin-right: 0;
+        }
+        &-img--menu{
+            margin-left: 0;
+        }
+    }
+    
+    
+}
+
+@media (max-width: 630px){
+    .footer-top{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        &_sub{
+            padding-left: 5px;
+        }
+    }
+}

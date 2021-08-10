@@ -1,5 +1,10 @@
 $(function(){
 
+
+    $('.header_inner-btn').on('click', function(){
+        $('.nav_list').toggleClass('nav_list--active');
+        $('.user_nav').toggleClass('user_nav--active');
+    });
     
     $('.shop-content_wrapper-btn').on('click', function () {
         $('.shop-content_wrapper-btn').removeClass('shop-content_wrapper-btn--active');
