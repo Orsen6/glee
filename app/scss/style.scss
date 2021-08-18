@@ -267,6 +267,7 @@
 .form{
     width: 470px;
     margin: 0 auto;
+    margin-bottom: 50px;
     &-sect{
         margin-top: 120px;
     }
@@ -871,9 +872,18 @@ li.slick-active button{
     height: 435px;
     padding-top: 200px;
 }
+.social--position.social--position-repair{
+    height: auto;
+    padding: 0 15px;
+}
 .social-wrap--height{
     height: 235px;
     padding-top: 0;
+}
+
+.social-wrap--height.social-wrap--addon{
+    height: auto;
+    padding: 20px 0;
 }
 
 
@@ -1386,18 +1396,19 @@ li.slick-active button{
         position: relative;
         margin-bottom: 70px;
     }
+    &_item-img{
+        height: 551px;
+    }
     .bloging-posts_item.bloging-posts_item--blog-one{
         margin-bottom: 0;
         border-bottom: 2px solid #ebebeb;
     }
     &_box{
         position: absolute;
-        bottom: 223px;
+        top: 482px;
         background-color: #a3bbc8;
         padding: 25px 40px;
-        &.bloging-posts_box--one{
-            bottom: 972px;
-        }
+        
     }
     &_box-span{
         padding: 25px 40px;
@@ -1737,7 +1748,7 @@ li.slick-active button{
 
     &-form_input{
         height: 50px;
-        width: 400px;
+        width: 420px;
         padding: 15px 50px 15px 15px;
         display: inline-block;
         font-size: 16px;
@@ -1762,6 +1773,7 @@ li.slick-active button{
         color: #999999;
         outline: 1px solid #436372;
         margin-bottom: 40px;
+        display: inline-block;
     }
     &-form_btn{
         padding: 20px 30px;
@@ -1771,6 +1783,9 @@ li.slick-active button{
         @extend %Rubik-400;
         color: #fff;
         letter-spacing: 1px;
+    }
+    .textarea--wrap{
+        display: flex;
     }
 }
 
@@ -1811,9 +1826,9 @@ li.slick-active button{
 .leave-form_textarea + .leave-form_label3::before{
     content:'';
     position: absolute;
-    right: -800px;
     width: 20px;
-    top: -181px;
+    top: 12px;
+    right: 38px;
     height: 15px;
     object-fit: cover;
     background-image: url('../images/blog-one/input-3.png');
@@ -1895,9 +1910,6 @@ li.slick-active button{
             outline: none;
             height: 180px;
             margin-bottom: 25px;
-        }
-        .leave-form_textarea+.leave-form_label3::before{
-            right: -600px;
         }
         .leave-form_btn{
             font-size: 15px;
