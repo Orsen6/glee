@@ -512,7 +512,6 @@ li.slick-active button{
             display: flex;
             .filter-item_pic{
                 margin: 0;
-                padding: 80px 20px ;
                 border: 1px solid #f2f2f2;
                 width: 250px;
             }
@@ -575,7 +574,7 @@ li.slick-active button{
     }
     &-item_menu-icon{
         padding: 12px;
-        background-color: #fff;
+        background-color: #f0f0f0;
         border-radius: 50%;
         & + .filter-item_menu-icon{
             margin-left: 22px;
@@ -1099,12 +1098,16 @@ li.slick-active button{
     * {
         min-height: 0;
         min-width: 0;
-      }
+    }
     display: flex;
     width: 555px;
     height: 540px;
     margin-right: 65px;
     &_small{
+        * {
+            min-height: 0;
+            min-width: 0;
+          }
         width: 145px;
         height: 530px;
         .slick-list{
@@ -1134,6 +1137,10 @@ li.slick-active button{
         
     }
     &_big{
+        * {
+            min-height: 0;
+            min-width: 0;
+        }
         width: 385px;
         height: 530px;
         display: block;
