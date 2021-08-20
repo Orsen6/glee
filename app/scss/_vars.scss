@@ -17,3 +17,17 @@
     font-family: 'Rubik-Regular', sans-serif;
     font-weight: 400;
 }
+
+%checkbox{
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+}
+
+@function max($numbers...) {
+    @return m#{a}x(#{$numbers});
+}
+@function min($numbers...) {
+    @return m#{i}n(#{$numbers});
+}

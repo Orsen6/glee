@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link type="text/css" rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header_inner">
+                <a href="" class="logo">Glee.</a>
+                <button class="header_inner-btn">
+                    <span class="header_inner-span">MENU</span>
+                </button>
+                <nav class="nav">
+                    <ul class="nav_list">
+                        <li class="nav_list-item">
+                            <a href="#" class="nav_list-link">Home +</a>
+                        </li>
+                        <li class="nav_list-item">
+                            <a href="#" class="nav_list-link">About</a>
+                        </li>
+                        <li class="nav_list-item">
+                            <a href="#" class="nav_list-link">Services</a>
+                        </li>
+                        <li class="nav_list-item">
+                            <a href="#" class="nav_list-link">Pages +</a>
+                        </li>
+                        <li class="nav_list-item">
+                            <a href="#" class="nav_list-link">News</a>
+                        </li>
+                        <li class="nav_list-item">
+                            <a href="#" class="nav_list-link">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="user_nav">
+                    <a  href="#"><img alt="" class="user_nav-img user_nav-img--search" src="images/search.png"></a>
+                    <a class="user_nav-link" href="#"><img alt="" class="user_nav-img user_nav-img--liked" src="images/liked.png">
+                    <span class="user_nav-span">0</span></a>
+                    <a class="user_nav-link" href=""><img alt="" class="user_nav-img user_nav-img--cart" src="images/cart.png">
+                    <span class="user_nav-span">0</span></a>
+                    <a href=""><img alt="" class="user_nav-img user_nav-img--menu" src="images/menu.png"></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="breadcrumbs">
+            <div class="breadcrumbs-wrap">
+                <h2 class="breadcrumbs-title filter-title">
+                    Product Detalis
+                </h2>
+                <div class="list-wrap list-wrap--product">
+                    <ul class="breadcrumbs-items">
+                        <a href="#">
+                            <li class="breadcrumbs-item">
+                                Home
+                            </li>
+                        </a>
+                            <li class="breadcrumbs-item ">
+                                Product Detalis
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <section class="product">
+            <div class="container-min">
+                <div class="product_wrapper">
+                    <div class="product-slider">
+                        <div class="product-slider_small">
+                            <div class="product-slider_small-item product-slider_small-item--margin">
+                                <img class="product-slider_small-img" src="images/product/1.jpg" alt="">
+                            </div>
+                            <div class="product-slider_small-item">
+                                <img class="product-slider_small-img" src="images/product/2.jpg" alt="">
+                            </div>
+                            <div class="product-slider_small-item">
+                                <img class="product-slider_small-img" src="images/product/3.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="product-slider_big">
+                            <div class="product-slider_big-item">
+                                <img class="product-slider_big-img" src="images/product/1.jpg" alt="">
+                            </div>
+                            <div class="product-slider_big-item">
+                                <img class="product-slider_big-img" src="images/product/2.jpg" alt="">
+                            </div>
+                            <div class="product-slider_big-item">
+                                <img class="product-slider_big-img" src="images/product/3.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-desc">
+                        <h3 class="product-desc_title">Pendant lamp</h3>
+                        <div id="product-desc_rating" class="product-desc_rating"></div>
+                        <span class="product-desc_price">23$</span>
+                        <p class="product-desc_text">
+                            consectetur adipisicing elit, sed do eiusmod tempor incididunt 
+                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+                        </p>
+                        <form class="product-desc_form" action="#">
+                            <input class="product-desc_input" type="number" min="0" value="1">
+                            <button class="product-desc_btn" type="submit">Add to cart</button>
+                        </form>
+                        <div class="product-desc_wrap">
+                            <div class="product-desc_description">
+                                <p class="product-desc_description-left product-desc_description--text">SKU:</p>
+                                <span class="product-desc_description-right product-desc_description--text">014</span>
+                            </div>
+                            <div class="product-desc_description">
+                                <p class="product-desc_description-left product-desc_description--text">Category:</p>
+                                <span class="product-desc_description-right product-desc_description--text">Lights</span>
+                            </div>
+                            <div class="product-desc_description">
+                                <p class="product-desc_description-left product-desc_description--text">Tag:</p>
+                                <span class="product-desc_description-right product-desc_description--text">Decorative</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="additional">
+                    <div class="additional-btns">
+                        <a class="additional-btn additional-btn--active" href="#tab1">Description</a>
+                        <a class="additional-btn" href="#tab2">Additional information</a>
+                        <a class="additional-btn" href="#tab3">Reviews (2)</a>
+                    </div>
+                    <div class="additional-content additional-content--active" id="tab1">
+                        <p class="additional-content_text">
+                            consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                             exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                    </div>
+                    <div class="additional-content" id="tab2">
+                        <p class="additional-content_text">
+                           content 2
+                        </p>
+                    </div>
+                    <div class="additional-content" id="tab3"> 
+                        <p class="additional-content_text">
+                            content 3
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="inner">
+            <div class="container-min">
+                <div class="inner-content">
+                    <h3 class="inner-content_title">Related products </h3>
+                    <div class="inner-content_slider">
+                        <div class="inner-content_slider-item filter-item "> 
+                            <img src="images/filtration/item1.png" alt="" class="filter-item_pic">
+                            <div class="filter-item_menu">
+                                <a href="#"><img src="images/filtration/menu-icon1.png" alt="" class="filter-item_menu-icon"></a>
+                                <a href="#"><img src="images/filtration/menu-icon3.png" alt="" class="filter-item_menu-icon filter-item_menu-icon--color"></a>
+                                <a href="#"><img src="images/filtration/menu-icon2.png" alt="" class="filter-item_menu-icon"></a>
+                            </div>
+                            <p class="filter-item_desc">
+                                Wooden Radion
+                            </p>
+                            <p class="filter-item_cin">
+                                $29.00
+                            </p>
+                        </div>
+                        <div class="inner-content_slider-item filter-item "> 
+                            <img src="images/filtration/item1.png" alt="" class="filter-item_pic">
+                            <div class="filter-item_menu">
+                                <a href="#"><img src="images/filtration/menu-icon1.png" alt="" class="filter-item_menu-icon"></a>
+                                <a href="#"><img src="images/filtration/menu-icon3.png" alt="" class="filter-item_menu-icon filter-item_menu-icon--color"></a>
+                                <a href="#"><img src="images/filtration/menu-icon2.png" alt="" class="filter-item_menu-icon"></a>
+                            </div>
+                            <p class="filter-item_desc">
+                                Wooden Radion
+                            </p>
+                            <p class="filter-item_cin">
+                                $29.00
+                            </p>
+                        </div>
+                        <div class="inner-content_slider-item filter-item "> 
+                            <img src="images/filtration/item1.png" alt="" class="filter-item_pic">
+                            <div class="filter-item_menu">
+                                <a href="#"><img src="images/filtration/menu-icon1.png" alt="" class="filter-item_menu-icon"></a>
+                                <a href="#"><img src="images/filtration/menu-icon3.png" alt="" class="filter-item_menu-icon filter-item_menu-icon--color"></a>
+                                <a href="#"><img src="images/filtration/menu-icon2.png" alt="" class="filter-item_menu-icon"></a>
+                            </div>
+                            <p class="filter-item_desc">
+                                Wooden Radion
+                            </p>
+                            <p class="filter-item_cin">
+                                $29.00
+                            </p>
+                        </div>
+                        <div class="inner-content_slider-item filter-item "> 
+                            <img src="images/filtration/item1.png" alt="" class="filter-item_pic">
+                            <div class="filter-item_menu">
+                                <a href="#"><img src="images/filtration/menu-icon1.png" alt="" class="filter-item_menu-icon"></a>
+                                <a href="#"><img src="images/filtration/menu-icon3.png" alt="" class="filter-item_menu-icon filter-item_menu-icon--color"></a>
+                                <a href="#"><img src="images/filtration/menu-icon2.png" alt="" class="filter-item_menu-icon"></a>
+                            </div>
+                            <p class="filter-item_desc">
+                                Wooden Radion
+                            </p>
+                            <p class="filter-item_cin">
+                                $29.00
+                            </p>
+                        </div>
+                        <div class="inner-content_slider-item filter-item "> 
+                            <img src="images/filtration/item1.png" alt="" class="filter-item_pic">
+                            <div class="filter-item_menu">
+                                <a href="#"><img src="images/filtration/menu-icon1.png" alt="" class="filter-item_menu-icon"></a>
+                                <a href="#"><img src="images/filtration/menu-icon3.png" alt="" class="filter-item_menu-icon filter-item_menu-icon--color"></a>
+                                <a href="#"><img src="images/filtration/menu-icon2.png" alt="" class="filter-item_menu-icon"></a>
+                            </div>
+                            <p class="filter-item_desc">
+                                Wooden Radion
+                            </p>
+                            <p class="filter-item_cin">
+                                $29.00
+                            </p>
+                        </div>
+                        <div class="inner-content_slider-item filter-item "> 
+                            <img src="images/filtration/item1.png" alt="" class="filter-item_pic">
+                            <div class="filter-item_menu">
+                                <a href="#"><img src="images/filtration/menu-icon1.png" alt="" class="filter-item_menu-icon"></a>
+                                <a href="#"><img src="images/filtration/menu-icon3.png" alt="" class="filter-item_menu-icon filter-item_menu-icon--color"></a>
+                                <a href="#"><img src="images/filtration/menu-icon2.png" alt="" class="filter-item_menu-icon"></a>
+                            </div>
+                            <p class="filter-item_desc">
+                                Wooden Radion
+                            </p>
+                            <p class="filter-item_cin">
+                                $29.00
+                            </p>
+                        </div>
+                        <div class="inner-content_slider-item filter-item "> 
+                            <img src="images/filtration/item1.png" alt="" class="filter-item_pic">
+                            <div class="filter-item_menu">
+                                <a href="#"><img src="images/filtration/menu-icon1.png" alt="" class="filter-item_menu-icon"></a>
+                                <a href="#"><img src="images/filtration/menu-icon3.png" alt="" class="filter-item_menu-icon filter-item_menu-icon--color"></a>
+                                <a href="#"><img src="images/filtration/menu-icon2.png" alt="" class="filter-item_menu-icon"></a>
+                            </div>
+                            <p class="filter-item_desc">
+                                Wooden Radion
+                            </p>
+                            <p class="filter-item_cin">
+                                $29.00
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="blog">
+            <div class="container-min">
+                <div class="blog-top">
+                    <h2 class="blog-top_title">
+                        Our Insights & Articles
+                    </h2>
+                    <a href="#">
+                        <h6 class="blog-top_subtitle">
+                            View All
+                        </h6>
+                    </a>
+                </div>
+                <div class="blog-main">
+                    <div class="blog-main_item">
+                        <a class="blog-main_item-link" href="">
+                            <img class="blog-main_item-img" src="images/blog/1.png" alt="">
+                        </a>
+                        <a href="">
+                            <p class="blog-main_item-text">
+                                Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut Diusmod tempor incididunt ut
+                            </p>
+                        </a>
+                        <div class="blog-main_item-wrap">
+                            <a href="">
+                                <p class="blog-main_item-sub"> 28 JANUARY, 2020</p>
+                            </a>
+                            <a href="">
+                                <p class="blog-main_item-sub">BY ADMIN</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="blog-main_item">
+                        <a class="blog-main_item-link" href="">
+                            <img class="blog-main_item-img" src="images/blog/2.png" alt="">
+                        </a>
+                        <a href="">
+                            <p class="blog-main_item-text">
+                                Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut Diusmod tempor incididunt ut
+                            </p>
+                        </a>
+                        <div class="blog-main_item-wrap">
+                            <a href="">
+                                <p class="blog-main_item-sub"> 28 JANUARY, 2020</p>
+                            </a>
+                            <a href="">
+                                <p class="blog-main_item-sub">BY ADMIN</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="blog-main_item">
+                        <a class="blog-main_item-link" href="">
+                            <img class="blog-main_item-img" src="images/blog/3.png" alt="">
+                        </a>
+                        <a href="">
+                            <p class="blog-main_item-text">
+                                Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut Diusmod tempor incididunt ut
+                            </p>
+                        </a>
+                        <div class="blog-main_item-wrap">
+                            <a href="">
+                                <p class="blog-main_item-sub"> 28 JANUARY, 2020</p>
+                            </a>
+                            <a href="">
+                                <p class="blog-main_item-sub">BY ADMIN</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <div class="social">
+                    <div class="container-min">
+                        <div class="social-wrap social-wrap--main">
+                            <img class="social-logo" src="images/social/1.png" alt="" >
+                            <img class="social-logo" src="images/social/2.png" alt="" >
+                            <img class="social-logo" src="images/social/3.png" alt="" >
+                            <img class="social-logo" src="images/social/4.png" alt="" >
+                            <img class="social-logo" src="images/social/5.png" alt="" >
+                        </div>
+                    </div>
+                </div>
+            
+        </section>
+
+        
+
+    </main>
+
+    <footer class="footer">
+        <div class="container-min">
+            <div class="footer-top">
+                <div class="footer-top_connection">
+                    <a href="" class="logo">Glee.</a>
+                    <a class="footer-top_connection-link" href="">ADDRESS: 4772 Wines Lane Houston, TX 77032</a>
+                    <a class="footer-top_connection-link" href="">Telephone: +832-347-5843</a>
+                    <a class="footer-top_connection-link" href="">Email: contact@Glee.com</a>
+                </div>
+                <div class="footer-top_social">
+                    <h6 class="footer-top_social-title">SERVICES</h6>
+                    <ul class="footer-top_social-list">
+                        <li class="footer-top_social-item">
+                            <a href="" class="footer-top_social-link">About us</a>
+                        </li>
+                        <li class="footer-top_social-item">
+                            <a href="" class="footer-top_social-link">Return Policy</a>
+                        </li>
+                        <li class="footer-top_social-item">
+                            <a href="" class="footer-top_social-link">Our Blog</a>
+                        </li>
+                        <li class="footer-top_social-item">
+                            <a href="" class="footer-top_social-link">Contact Us</a>
+                        </li>
+                        <li class="footer-top_social-item">
+                            <a href="" class="footer-top_social-link">Terms & Condition</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-top_social">
+                    <h6 class="footer-top_social-title">ACCOUNT</h6>
+                    <ul class="footer-top_social-list">
+                        <li class="footer-top_social-item">
+                            <a href="" class="footer-top_social-link">Your Account</a>
+                        </li>
+                        <li class="footer-top_social-item">
+                            <a href="" class="footer-top_social-link">Checkout</a>
+                        </li>
+                        <li class="footer-top_social-item">
+                            <a href="" class="footer-top_social-link">Login</a>
+                        </li>
+                        <li class="footer-top_social-item">
+                            <a href="" class="footer-top_social-link">Register</a>
+                        </li>
+                </div>
+                <div class="footer-top_sub">
+                    <h6 class="footer-top_sub-title footer-top_social-title">NEWSLETTER</h6>
+                    <p class="footer-top_sub-text">Subscribe by our newsletter and get update protidin.</p>
+                    <div class="footer-top_sub-form">
+                        <form action="" class="sub-form">
+                            <input class="sub-form_input" type="email" placeholder="Email address">
+                            <button type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-bottom_copy">©2020 CopyRight Example. All rights reserved. </p>
+                <div class="footer-bottom_transitions">
+                    <ul class="footer-top_social-list footer-bottom_social-list">
+                        <li class="footer-top_social-item footer-bottom_social-item">
+                            <a href="" class="footer-top_social-link">About us</a>
+                        </li>
+                        <li class="footer-top_social-item footer-bottom_social-item">
+                            <a href="" class="footer-top_social-link">Return Policy</a>
+                        </li>
+                        <li class="footer-top_social-item footer-bottom_social-item">
+                            <a href="" class="footer-top_social-link">Our Blog</a>
+                        </li>
+                        <li class="footer-top_social-item footer-bottom_social-item">
+                            <a href="" class="footer-top_social-link">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="js/main.min.js"></script>
+</body>
+</html>
